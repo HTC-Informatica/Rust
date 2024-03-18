@@ -1,3 +1,13 @@
+use std::io;
+
 fn main() {
-    println!("Hello, world!");
+    println!("Advinhe o Numero");
+    println!("Digite o palpite");
+
+    let mut palpite = String::new();
+
+    io::stdin().read_line(&mut palpite)
+        .expect("Falha ao ler entrada");
+
+    println!("você disse {}", palpite);
 }
