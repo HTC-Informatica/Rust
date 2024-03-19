@@ -9,5 +9,5 @@ fn main() {
     io::stdin().read_line(&mut palpite)
         .expect("Falha ao ler entrada");
 
-    println!("você disse {}", palpite);
+    println!("você disse {}", palpie);
 }
