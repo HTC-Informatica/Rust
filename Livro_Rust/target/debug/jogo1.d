@@ -1,1 +1,1 @@
-/data/data/com.termux/files/home/Rust/jogo1/target/debug/jogo1: /data/data/com.termux/files/home/Rust/jogo1/src/main.rs
+C:\Users\hardt\Rust\Livro_Rust\target\debug\jogo1.exe: C:\Users\hardt\Rust\Livro_Rust\src\main.rs
