@@ -8,26 +8,33 @@ fn main() {
     println!("Advinhe o Numero");
 
     let numero_secreto = rand::thread_rng().gen_range(1, 101);
-    println!("O númereo secreto é: {}", numero_secreto);
+    
+    loop {
+    
+        println!("Digite o palpite");
 
-    println!("Digite o palpite");
+        let mut palpite = String::new();
 
-    let mut palpite = String::new();
+        io::stdin().read_line(&mut palpite)
+            .expect("Falha ao ler entrada");
 
-    io::stdin().read_line(&mut palpite)
-        .expect("Falha ao ler entrada");
+            let palpite: u32 = match palpite.trim().parse() {
+                Ok(num) => num,
+                Err(_) => continue,
+            };
 
-    let palpite: u32 = palpite.trim().parse()
-        .expect("Por favor digite um numero");
 
+        println!("você disse {}", palpite);
 
-    println!("você disse {}", palpite);
+        match palpite.cmp(&numero_secreto) {
 
-    match palpite.cmp(&numero_secreto) {
-
-        Ordering::Less => println!("Muito baixo!"),
-        Ordering::Greater => println!("Muito alto!"),
-        Ordering::Equal => println!("você acertou!"),
-    } 
+            Ordering::Less => println!("Muito baixo!"),
+            Ordering::Greater => println!("Muito alto!"),
+            Ordering::Equal => {
+            println!("você acertou!");
+            break;
+            }
+        }
+    }
 }
-// Pausa::Permitindo Múltiplos Palpites Usando Looping
+// Pausa::Jogo concluido! partindo para o cap 3
