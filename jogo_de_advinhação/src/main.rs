@@ -11,7 +11,7 @@ fn main() {
     
     loop {
     
-        println!("Digite o palpite");
+        println!("Digite um numero de 1 a 100");
 
         let mut palpite = String::new();
 
@@ -28,8 +28,8 @@ fn main() {
 
         match palpite.cmp(&numero_secreto) {
 
-            Ordering::Less => println!("Muito baixo!"),
-            Ordering::Greater => println!("Muito alto!"),
+            Ordering::Less => println!("Mais!"),
+            Ordering::Greater => println!("Menos!"),
             Ordering::Equal => {
             println!("você acertou!");
             break;
