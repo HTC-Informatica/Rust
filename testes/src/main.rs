@@ -13,5 +13,14 @@ fn main() {
     
         println!("O valor de x é: {}", x);
 // --------
+
+// TESTES DE TUPLAEROS DE DESESTRUTURAÇAO 
+// QUE SEPARA-OS EM TRES PARTE 
+
+    let tup = (500, 6.4, 1);
+
+    let (x, y, z) = tup;
+
+    println!("O valor do y é: {}", y);
 }
 
