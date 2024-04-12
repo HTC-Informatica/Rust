@@ -1,3 +1,7 @@
+fn fibonacci() {
+
+}
+
 fn main() {
     // let mut x = 5;
     // println!("O valor de x é: {}", x);
@@ -44,13 +48,12 @@ fn main() {
     
     // Condições if
 
-    let numero = 6;
+    // let numero = 6;
 
-    if numero < 5 {
-        println!("condição era verdadeira");
-    } else {
-        println!("condição era falsa");
-    }
-    
+    // if numero < 5 {
+        // println!("condição era verdadeira");
+    // } else {
+        // println!("condição era falsa");
+    // }    
 
 }
